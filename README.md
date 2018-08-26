@@ -2,6 +2,8 @@
 
 <br>
 This repository is collection of multiple linux commands.
-<br>
-1. `sudo su`
+
+1. `sudo su` for root or supre user.
+
+2. 
 
