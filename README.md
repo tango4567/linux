@@ -1,2 +1,2 @@
-# linux
-This repository is collection of multiple linux command.
+__Wellcome to the Linux commands collections__
+This repository is collection of multiple linux commands.
