@@ -3,12 +3,7 @@
 <br>
 This repository is collection of multiple linux commands.
 
-# op
-## op
-
-
-
-How to uninstall and install apache in Ubuntu.
+# How to uninstall and install apache in Ubuntu.
 
 Actully I'm getting following problem with solution with terminal output:
 
@@ -96,8 +91,9 @@ Confirm apt-get is fixed
   `sudo add-apt-repository universe`
 
 # Then i run this command
-`sudo apt-get install geoip-database-extra
-Reading package lists... Done
+`sudo apt-get install geoip-database-extra`
+
+`Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 geoip-database-extra is already the newest version (20160408-1).
@@ -128,8 +124,9 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 `
 
 # Then i run this command
-`  sudo apt-get purge runit
-Reading package lists... Done
+`sudo apt-get purge runit`
+
+`Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 The following package was automatically installed and is no longer required:
@@ -162,9 +159,10 @@ Errors were encountered while processing:
  geoip-database-extra
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 `
-# Then i Run 
-`  sudo apt-get --purge remove libc6-dev-i386 libc6-dev-x32 gcc-5-multilib gcc-multilib
-Reading package lists... Done
+# Then i run this command 
+`  sudo apt-get --purge remove libc6-dev-i386 libc6-dev-x32 gcc-5-multilib gcc-multilib`
+
+`Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 Package 'gcc-multilib' is not installed, so not removed
@@ -186,9 +184,10 @@ Errors were encountered while processing:
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 `
 
-# Then i Run
-`sudo dpkg --remove --force-remove-reinstreq --dry-run libgfortran3:amd64
-dpkg: dependency problems prevent removal of libgfortran3:amd64:
+# Then i run this command 
+`sudo dpkg --remove --force-remove-reinstreq --dry-run libgfortran3:amd64`
+
+`dpkg: dependency problems prevent removal of libgfortran3:amd64:
  libgfortran-5-dev:amd64 depends on libgfortran3 (>= 5.4.0-6ubuntu1~16.04.9).
  liblapack3 depends on libgfortran3 (>= 4.6).
  python-scipy depends on libgfortran3 (>= 4.6); however:
@@ -200,10 +199,11 @@ dpkg: error processing package libgfortran3:amd64 (--remove):
 Errors were encountered while processing:
  libgfortran3:amd64`
 
-# Then i run
+# Then i run this command 
 
-`sudo apt-get --purge remove libc6-dev-i386 libc6-dev-x32 gcc-5-multilib gcc-multilib
-Reading package lists... Done
+`sudo apt-get --purge remove libc6-dev-i386 libc6-dev-x32 gcc-5-multilib gcc-multilib`
+
+`Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 Package 'gcc-multilib' is not installed, so not removed
@@ -226,8 +226,9 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)`
 
 
 # Finally I Ran 
-`sudo apt-get install --reinstall geoip-database-extra 
-Reading package lists... Done
+`sudo apt-get install --reinstall geoip-database-extra`
+
+`Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 The following package was automatically installed and is no longer required:
@@ -247,9 +248,10 @@ Setting up geoip-database-extra (20160408-1) ...
 # Then udate Command
 `sudo apt-get update`
 
-# Then I run
-` sudo apt autoremove 
-Reading package lists... Done
+# Then i run this command 
+` sudo apt autoremove` 
+
+`Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 The following packages will be REMOVED:
@@ -261,13 +263,14 @@ Do you want to continue? [Y/n] y
 Removing fgetty (0.7-1) ...
 Processing triggers for man-db (2.7.5-1) ...`
 
-# Then I tried 
-`sudo apt-get install geoip-database-extra
-Reading package lists... Done
+# Then I tried with following command
+`sudo apt-get install geoip-database-extra`
+
+`Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
-geoip-database-extra is already the newest version (20160408-1).
-0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.`
+geoip-database-extra is already the newest version (20160408-1).` <-- i already have newest version
+`0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.`
 
 
 # Finally I Solved my Problem with geoip
