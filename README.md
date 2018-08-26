@@ -1,2 +1,5 @@
-__Wellcome to the Linux commands collections__
-<br>This repository is collection of multiple linux commands.
+# Wellcome to the Linux commands collections
+
+<br>
+<p align="center">This repository is collection of multiple linux commands.</p>
+1. sudo su
