@@ -32,10 +32,23 @@ This repository is collection of multiple linux commands.
 
 `sudo geany /etc/vsftpd.conf`
 
-`sudo service vsftpd restart`
+`sudo service vsftpd restart` <-- some time you can't connect 
 
-
-
+# 6. Edit dhcpcd.conf for network connection in raspberry
+`sudo geany /etc/dhcpcd.conf` 
+* Scroll to the bottom of the script, and add the following lines
+`interface eth0
+ static ip_address = 10.0.0.7
+ static routers = 10.0.0.1
+ static domain_name_servers = 10.0.0.1
+ 
+ interface wlan0
+ static ip_address = 10.0.0.7
+ static routers = 10.0.0.1
+ static domain_name_servers = 10.0.0.1
+ `
+# 7. Reboot raspberry
+`sudo reboot`
 
 # How to uninstall and install apache in Ubuntu.
 
