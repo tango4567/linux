@@ -6,6 +6,15 @@ This repository is collection of multiple linux commands.
 # Install phpmyadmin
 `sudo apt-get install phpmyadmin`
 
+* For staring phpmyadmin you need to add all line at the bottom of apache2.conf file*
+I'm using geany editor here
+
+`sudo geany /etc/apache2/apache2.conf`
+Add following line at the end of this file
+
+#### Include /etc/phpmyadmin/apache.conf
+
+
 # Check mysql running port id and ip
 `netstat -tlnp`
 
