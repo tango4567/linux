@@ -3,6 +3,13 @@
 <br>
 This repository is collection of multiple linux commands.
 
+# Install phpmyadmin
+`sudo apt-get install phpmyadmin`
+
+# Check mysql running port id and ip
+`netstat -tlnp`
+
+
 # How to uninstall and install apache in Ubuntu.
 
 Actully I'm getting following problem with solution with terminal output:
