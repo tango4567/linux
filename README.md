@@ -3,20 +3,38 @@
 <br>
 This repository is collection of multiple linux commands.
 
-# Install phpmyadmin
+# 1. Installing JAVA
+
+`sudo apt-get update && sudo apt-get install oracle-java8-jdk`
+
+# 2. Installing TOMCAT
+`sudo apt-get install tomcat8`
+
+# 3. Install phpmyadmin
 `sudo apt-get install phpmyadmin`
 
 * For staring phpmyadmin you need to add all line at the bottom of apache2.conf file*
-I'm using geany editor here
+* I'm using geany editor here
 
 `sudo geany /etc/apache2/apache2.conf`
-Add following line at the end of this file
-
+* Add following line at the end of this file
 #### Include /etc/phpmyadmin/apache.conf
 
 
-# Check mysql running port id and ip
+# 4. Check mysql running port id and ip
 `netstat -tlnp`
+
+# 5. Installing FTP in Raspberry-pi
+
+`sudo rasp-congig`
+* and go to Interfacing Options --> SSH --> Yes --> Ok --> Finish
+`sudo apt-get install vsftpd`
+
+`sudo geany /etc/vsftpd.conf`
+
+`sudo service vsftpd restart`
+
+
 
 
 # How to uninstall and install apache in Ubuntu.
