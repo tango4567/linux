@@ -24,7 +24,7 @@ This repository is collection of multiple linux commands.
 # 4. Check mysql running port id and ip
 `netstat -tlnp`
 
-# 5. Installing FTP in Raspberry-pi
+# 5. Installing FTP 
 
 `sudo rasp-congig`
 * and go to Interfacing Options --> SSH --> Yes --> Ok --> Finish
@@ -34,7 +34,7 @@ This repository is collection of multiple linux commands.
 
 `sudo service vsftpd restart` <-- some time you can't connect 
 
-# 6. Edit dhcpcd.conf for network connection in raspberry
+# 6. Edit dhcpcd.conf for network connection 
 `sudo geany /etc/dhcpcd.conf` 
 * Scroll to the bottom of the script, and add the following lines
 `interface eth0
@@ -47,10 +47,13 @@ This repository is collection of multiple linux commands.
  static routers = 10.0.0.1
  static domain_name_servers = 10.0.0.1
  `
-# 7. Reboot raspberry
+# 7. Reboot 
 `sudo reboot`
 
-# How to uninstall and install apache in Ubuntu.
+# 8. Network command
+`sudo service network-manager start` > For starting network manager services.
+
+# How to uninstall and install apache.
 
 Actully I'm getting following problem with solution with terminal output:
 
