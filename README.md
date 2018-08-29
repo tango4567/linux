@@ -51,7 +51,9 @@ This repository is collection of multiple linux commands.
 `sudo reboot`
 
 # 8. Network command
-`sudo service network-manager start` > For starting network manager services.
+`sudo service network-manager start`   *For starting network manager services.
+`sudo service network-manager restart` *For restarting network manager services.
+`sudo service network-manager stop`    *For stopting network manager services.
 
 # How to uninstall and install apache.
 
